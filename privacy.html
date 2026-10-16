@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — rclone backup</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --bg:#fff; --line:#e5e5e5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e8; --muted:#9a9a9a; --bg:#161616; --line:#2e2e2e; }
+  }
+  body { background:var(--bg); color:var(--fg); margin:0;
+         font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  main { max-width:40rem; margin:0 auto; padding:3rem 1rem; }
+  h1 { font-size:1.5rem; margin:0 0 .5rem; }
+  p.sub { color:var(--muted); margin:0 0 2rem; }
+  h2 { font-size:1.05rem; margin:2rem 0 .5rem; }
+  a { color:inherit; }
+  footer { border-top:1px solid var(--line); margin-top:3rem; padding-top:1rem;
+           color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="sub">Last updated: 2026-10-17</p>
+
+  <h2>Scope of this application</h2>
+  <p>This is a single-user, personal application. It is an installation of
+     <a href="https://rclone.org/">rclone</a> running on the owner's own home server.
+     It is not distributed to anyone and has no users other than the owner.</p>
+
+  <h2>What data is accessed</h2>
+  <p>The application authenticates to the owner's own Google Drive account using the
+     <code>https://www.googleapis.com/auth/drive.file</code> scope. This scope grants
+     access only to files that the application itself creates. It cannot read or modify
+     any other file in the Drive account.</p>
+
+  <h2>What data is collected</h2>
+  <p>None. The application collects no personal data, has no analytics, no server-side
+     component that receives user data, and no third-party integrations. It only uploads
+     the owner's own backup archives to the owner's own Drive storage.</p>
+
+  <h2>What data is shared</h2>
+  <p>None. No data is transmitted to any party other than Google Drive, which is the
+     owner's own storage destination.</p>
+
+  <h2>Data retention</h2>
+  <p>Backup archives uploaded by the application are retained in the owner's Drive for
+     30 days and then deleted automatically by the application.</p>
+
+  <h2>OAuth credentials</h2>
+  <p>The OAuth refresh token is stored locally on the owner's own server, readable only
+     by the owner's account. It is not shared or transmitted elsewhere.</p>
+
+  <h2>Contact</h2>
+  <p>This application is maintained by its sole user. Inquiries can be directed to the
+     support email configured on the Google OAuth consent screen.</p>
+
+  <footer>
+    <a href="./index.html">Home</a>
+  </footer>
+</main>
+</body>
+</html>

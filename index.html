@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone backup — personal use</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --bg:#fff; --line:#e5e5e5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e8; --muted:#9a9a9a; --bg:#161616; --line:#2e2e2e; }
+  }
+  body { background:var(--bg); color:var(--fg); margin:0;
+         font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  main { max-width:40rem; margin:0 auto; padding:3rem 1rem; }
+  h1 { font-size:1.5rem; margin:0 0 .5rem; }
+  p.sub { color:var(--muted); margin:0 0 2rem; }
+  h2 { font-size:1.05rem; margin:2rem 0 .5rem; }
+  a { color:inherit; }
+  footer { border-top:1px solid var(--line); margin-top:3rem; padding-top:1rem;
+           color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>rclone backup</h1>
+  <p class="sub">A personal OAuth client used by one person to back up files to their own Google Drive.</p>
+
+  <h2>What this is</h2>
+  <p>This page exists to satisfy Google's OAuth consent screen requirements for a
+     personal-use application. The application is an installation of
+     <a href="https://rclone.org/">rclone</a>, an open-source file transfer tool,
+     running on the owner's own home server.</p>
+
+  <h2>What it does</h2>
+  <p>It uploads backup archives from a self-hosted Git server to the owner's own
+     Google Drive on a daily schedule. It uses the
+     <code>drive.file</code> scope, which limits access to files the application
+     itself creates.</p>
+
+  <h2>Who can use it</h2>
+  <p>Only the owner. This application is not distributed, not offered as a service,
+     and has no other users.</p>
+
+  <footer>
+    <a href="./privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
